@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="treasury\main.css">
+
+    <title>NGO_WEBSITE</title>
+</head>
+	<body>
+			<div class="navigation">
+				<ul>
+					<li class="list active">
+						<b></b>
+						<b></b>
+						<a href="#">
+							<span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+							<span class="title">Home</span>
+						</a>
+					</li>
+
+					<li class="list">
+						<b></b>
+						<b></b>
+						<a href="login.html">
+							<span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+							<span class="title">Sign in</span>
+							<span></span>
+						</a>
+					</li>
+
+					<li class="list">
+						<b></b>
+						<b></b>
+						<a href="signup.html">
+							<span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+							<span class="title">Sign up</span>
+						</a>
+					</li>
+
+                    <li class="list">
+						<b></b>
+						<b></b>
+						<a href="donation.html">
+							<span class="icon"><ion-icon name="cash-outline"></ion-icon></ion-icon></span>
+							<span class="title">Donate</span>
+						</a>
+					</li>
+
+					<li class="list">
+						<b></b>
+						<b></b>
+						<a href="Aboutus.html">
+							<span class="icon"><ion-icon name="people-outline"></ion-icon></ion-icon></span>
+							<span class="title">About us</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="toggle"></div>
+			<div class="toggle">
+			</div>
+
+<!-- Explanation in JS tab -->
+
+<!-- The two texts -->
+<div id="container">
+	<span id="text1"></span>
+	<span id="text2"></span>
+</div>
+
+<!-- The SVG filter used to create the merging effect -->
+<svg id="filters">
+	<defs>
+		<filter id="threshold">
+			<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+			<feColorMatrix in="SourceGraphic"
+					type="matrix"
+					values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+		</filter>
+	</defs>
+</svg>
+
+<div id="slide">
+	<div class="button" id="previous">&laquo</div>
+	<div class="items"></div>
+	<div class="button" id="next">&raquo</div>
+</div>
+<section>
+	<div class="glass">
+		<div class="glass1">
+		<div class="glass3">
+		<div class="col-12">
+		</div>
+		<div class="col-md-4">
+		<span id="count1" class="display-4"></span>
+		</div>
+		<div class="col-md-4" id="pls">
+		<span id="count2" class="display-4"></span>
+		</div>
+		<div class="col-md-4" id="plss">
+		<span id="count3" class="display-4"></span>
+		</div>
+		</div>
+		</div>
+
+		<h1 class="para">Blind people Helped</h1>
+		<h1 class="para" id="paragr">Blind children Educated</h1>
+		<h1 class="para" id = "parag">Blind People Cured</h1>
+	</div>
+</section>
+
+<div class="card">
+	<h1>Our Story</h1>
+	<img id="st" src="assests/story-pic1.png" alt="">
+	<p id="p">Working in India since 1996, protecting sight and fighting for disability rights. We work in 13 states, extending eye health services to the least served areas. Enabling people to lead lives of independence and dignity.</p>
+</div>
+
+<div class="ourim">
+	<h1>Our Impact</h1>
+	<div class="card1" id="hov1">
+		<h2>Gayatri's Story</h2>
+		<img src="assests/gaytari-story.png" alt="">
+		<p class="ouraim">Under our School Eye Health Programme, Gayatri was identified with bilateral congenital cataract and was referred to Sightsavers partner hospital for the surgery. Today, Gayatri can see everything clearly and she has also become quite active in school activities.</p>
+	</div>
+
+	<div class="card1" id="hov2">
+		<h2>Shyam Sundar Devi's story</h2>
+		<img src="assests/shyam-sundar-devi-story.png" alt="">
+		<p class="ouraim">
+			70-year-old Shyam Sundar Devi from Patna had blurry vision in both eyes. After her screening by our health worker she was referred to SSLN Hospital where she was found to have cataract in both eyes and was operated for it
+		</p>
+	</div>
+
+	<div class="card1" id="hov3">
+		<h2>Soni's story</h2>
+		<img src="assests/soni-story.png" alt="">
+		<p class="ouraim">
+			Soni is eight years old who resides in Jehanabad district of Bihar. Soni is blind since birth and studies in a government school who is full of enthusiasm toward life.
+		</p>
+	</div>
+
+	<div class="card1" id="hov4">
+		<h2>Soni's story</h2>
+		<img src="assests/sarita-story.png" alt="">
+		<p class="ouraim">
+			19-year-old Sarita is visually impaired. In 2014, Sarita was given accessible devices under Sightsavers Inclusive Education Programme. She later participated in a Self- Defence Instructor Training organised by Sightsavers which transformed her life.
+		</p>
+	</div>
+	<a href="https://donation.sightsaversindia.in/?utm_source=google&utm_medium=conversion_Cnvrs8&utm_campaign=sightsavers-test" target="blank">Source : Sight Savers</a>
+</div>
+  	<script src="treasury/progressbar.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+
+		let menuToggle = document.querySelector('.toggle');
+		let navigation = document.querySelector('.navigation')
+		menuToggle.onclick = function(){
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+
+		// add active class in selected class item
+		let list = document.querySelectorAll('.list');
+		for (let i=0; i<list.length; i++){
+			list[i].onclick = function(){
+				let j = 0;
+				while(j<list.length){ 
+					list[j++].className = 'list';
+				}
+				list[i].className = 'list active';
+				
+			}
+		}
+	</script>
+	<script src="treasury/slide_show.js"></script>
+	<script src="treasury/Javascript/fluid.js"></script>
+		<script src="jquery.js" ></script> <!-- Load jQuery first -->
+		<script src="tilt.js"></script> <!-- Load Tilt.js library -->
+		<script src="treasury/Javascript/vanilla-tilt.js"></script>
+		<script src="treasury/Javascript/particles.js"></script>
+		<script src="treasury/Javascript/app.js"></script>
+        <script src="treasury/text.js"></script>
+	</body>
+</canvas>
+</html>

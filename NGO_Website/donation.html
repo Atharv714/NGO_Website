@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="treasury/donate.css">
+    <title>Donation</title>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="home.html">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="login.html">
+                    <span class="icon"><ion-icon name="log-in-outline"></ion-icon></span>
+                    <span class="title">Sign in</span>
+                    <span></span>
+                </a>
+            </li>
+
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="signup.html">
+                    <span class="icon"><ion-icon name="person-add-outline"></ion-icon></span>
+                    <span class="title">Sign up</span>
+                </a>
+            </li>
+
+            <li class="list active">
+                <b></b>
+                <b></b>
+                <a href="donation.html">
+                    <span class="icon"><ion-icon name="cash-outline"></ion-icon></ion-icon></span>
+                    <span class="title">Donate</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <b></b>
+                <b></b>
+                <a href="Aboutus.html">
+                    <span class="icon"><ion-icon name="people-outline"></ion-icon></ion-icon></span>
+                    <span class="title">About us</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="toggle"></div>
+    <div class="toggle">
+    </div>
+<section>
+    <div class="container">
+        <h1 class="heading">Enter the amount you want to donate : </h1>
+        <form action="donate_money.html">
+            <label class="amount" for="Amount">Amount : ₹</label>
+            <input type="number" id="Amount" placeholder="Enter amount" required>
+            <br>
+            <br>
+            <div class="adjust">
+                <label class="p">Pay Every Month</label>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <br>
+            <input type="submit" value="Proceed" id="submit">
+        </form>
+    </div>
+</section>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+
+		let menuToggle = document.querySelector('.toggle');
+		let navigation = document.querySelector('.navigation')
+		menuToggle.onclick = function(){
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+
+		// add active class in selected class item
+		let list = document.querySelectorAll('.list');
+		for (let i=0; i<list.length; i++){
+			list[i].onclick = function(){
+				let j = 0;
+				while(j<list.length){ 
+					list[j++].className = 'list';
+				}
+				list[i].className = 'list active';
+				
+			}
+		}
+	</script>
+</body>
+</html>
